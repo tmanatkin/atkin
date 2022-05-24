@@ -73,7 +73,7 @@ body{
     z-index: 50;
     margin: 0px;
     width: 100%;
-    height: 750px;
+    height: 850px;
     object-fit: cover;
     top: -2px;
 }
@@ -88,7 +88,10 @@ h1{
     position: absolute;
     margin: 0px;
     left: 50%;
-    transform: translate(-50%, 160%);
+    transform: translate(-50%, 180%);
+}
+#twoLineH1{
+    transform: translate(-50%, 70%);
 }
 h3{
     font-size: 100px;
@@ -100,12 +103,14 @@ h3{
     text-align: center;
 }
 p{
+    text-align: justify;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     padding: 0px;
     margin: 0px;
     font-size: 30px;
     color: var(--offBlack);
+    display: inline;
 }
 .footerText{
     font-size: 20px;
@@ -117,10 +122,6 @@ p{
     margin: -6px auto 0px auto;
     background-color: var(--offWhite);
     padding: 50px;
-}
-#aboutMe{
-    width: 80%;
-    margin: auto;
 }
 .button{
     margin: 20px auto 0px auto;
@@ -146,6 +147,23 @@ footer{
     background-color: var(--lightGrey);
     padding: 20px 50px 0px 50px;
 }
+
+/* SECTIONS */
+#aboutMe{
+    width: 80%;
+    margin: 20px auto;
+}
+.aboutImage{
+    height: 620px;
+    margin: 0px 20px 10px 0px;
+    float: left;
+}
+#resumeImage{
+    width: 80%;
+    max-width: 1300px;
+    margin: auto;
+    display: block;
+}
 #projectContainer{
     width: 100%;
     margin: auto;
@@ -168,12 +186,6 @@ footer{
     border: var(--lightGrey) 20px solid;
     width: 560px;
     height: 360px;
-}
-#resumeImage{
-    width: 80%;
-    max-width: 1300px;
-    margin: auto;
-    display: block;
 }
 
 /* MOBILE */
