@@ -11,17 +11,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yahtzee!</title>
     <script src="script.js"></script>
-    <link rel="icon" href="images/dieIcon.png"/>
+    <link rel="icon" href="images/dieIcon2.png"/>
     <link rel="stylesheet" href="style.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
 </head>
 <body onload="newTurn()">
     <div id="compScoreAlertContainer">
+        <p class="compScoreAlertText" style="display: block; text-align: center;">Computer's Turn</p>
+        <br>
         <img id="compDice00" src="">
         <img id="compDice01" src="">
         <img id="compDice02" src="">
         <img id="compDice03" src="">
         <img id="compDice04" src="">
         <img id="compDice05" src="">
+        <p class="compScoreAlertText">Roll 1</p>
         <br><br>
         <img id="compDice10" src="">
         <img id="compDice11" src="">
@@ -29,6 +36,7 @@
         <img id="compDice13" src="">
         <img id="compDice14" src="">
         <img id="compDice15" src="">
+        <p class="compScoreAlertText">Roll 2</p>
         <br><br>
         <img id="compDice20" src="">
         <img id="compDice21" src="">
@@ -36,8 +44,9 @@
         <img id="compDice23" src="">
         <img id="compDice24" src="">
         <img id="compDice25" src="">
+        <p class="compScoreAlertText">Roll 3</p>
         <br><br>
-        <p id="compScoreAlert"></p>
+        <p class="compScoreAlertText" id="compScoreAlertFinal" style="text-align: center;">asdasds</p><img id="compDiceScored" src="">
         <button id="compScoreContinueButton" onclick="document.getElementById('compScoreAlertContainer').style.display = 'none'">CONTINUE</button>
     </div>
     <div id="pageContainer">

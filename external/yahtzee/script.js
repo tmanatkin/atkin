@@ -340,8 +340,12 @@ function computerTurn(){
         }
     }
     
+    // Output Scored Die
+    document.getElementById("compDiceScored").src = "images/die" + iCompDiceKeepValue + "White.png"; iCompTurnScore
+    document.getElementById("compScoreAlertFinal").innerHTML = "Scored " + iCompTurnScore + " for ";
+
     // Display Scores
-    document.getElementById("compScoreAlert").innerHTML = aiAllCompDice.join("<br>");
+    // document.getElementById("compScoreAlert").innerHTML = aiAllCompDice.join("<br>");
 
 }
 
