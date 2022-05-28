@@ -161,6 +161,11 @@ footer{
     margin: auto;
     display: block;
 }
+#resumeImageMobile{
+    width: 100%;
+    margin: auto;
+    display: none;
+}
 #projectContainer{
     width: 100%;
     margin: auto;
@@ -222,6 +227,9 @@ footer{
     p{
         font-size: 40px;
     }
+    .pageContainer{
+        padding: 20px;
+    }
     .titleImage{
         height: 600px;
     }
@@ -230,7 +238,10 @@ footer{
         margin: 0px auto;
     }
     #resumeImage{
-        width: 100%;
+        display: none;
+    }
+    #resumeImageMobile{
+        display: block;
     }
     .projectCard{
         display: block;
