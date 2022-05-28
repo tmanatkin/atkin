@@ -227,9 +227,9 @@ footer{
     p{
         font-size: 40px;
     }
-    .pageContainer{
+    /* .pageContainer{
         padding: 20px;
-    }
+    } */
     .titleImage{
         height: 600px;
     }
