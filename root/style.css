@@ -4,9 +4,6 @@
     --offWhite: #fafafa;
     --offBlack: #222222;
     --lightGrey: #aaaaaa;
-
-    /* ATTRIBUTE PALLETE */
-    --navBorder: var(--offWhite) solid 3px;
 }
 
 /* @font-face {
@@ -56,7 +53,7 @@ ul li a{
 }
 ul li a:hover{
     font-size: 25px;
-    border: var(--navBorder);
+    border: var(--offWhite) solid 3px;;
     margin: -4.5px 0px 0px -80px;
 }
 
@@ -190,6 +187,9 @@ footer{
 
 /* MOBILE */
 @media only screen and (max-width: 1000px) {
+    /* nav{
+        display: none;
+    } */
     ul{
         display: flex;
         flex-direction: row-reverse;
@@ -198,14 +198,19 @@ footer{
     }
     ul li{
         right: 2.5px;
+        width: 200px;
     }
     ul li a{
         font-size: 35px;
-        width: 140px;
+        width: 200px;
+        transform: translate(-37.5px, 0px);
+        border: #00000000 solid 5px;;
     }
     ul li a:hover{
         font-size: 35px;
-        margin: -0px 0px 0px -80px;
+        margin: 2.5px 0px 0px -80px;
+        border: var(--offWhite) solid 5px;
+
     }
     h1{
         font-size: 150px;
@@ -214,12 +219,18 @@ footer{
     h3{
         font-size: 75px;
     }
+    p{
+        font-size: 40px;
+    }
     .titleImage{
         height: 600px;
     }
+    #aboutMe{
+        width: 100%;
+        margin: 0px auto;
+    }
     #resumeImage{
         width: 100%;
-        max-width: 720px;
     }
     .projectCard{
         display: block;
