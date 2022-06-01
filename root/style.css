@@ -189,6 +189,24 @@ footer{
     width: 560px;
     height: 360px;
 }
+.cardText{
+    margin: 20px;
+    padding: 45px 45px;
+    position: absolute;
+    border-radius: 30px;
+    width: 470px;
+    height: 270px;
+    text-align: left;
+    display: block;
+    color: #00000000;
+    background-color: #34343400;
+    transition: 0.3s;
+}
+.projectCard:hover .cardText{
+    margin: 0px;
+    color: var(--offWhite);
+    background-color: #222222ee;
+}
 
 /* MOBILE */
 @media only screen and (max-width: 1000px) {
@@ -254,6 +272,9 @@ footer{
         border: var(--lightGrey) 0px solid;
         width: 100%;
         height: 270px;
+    }
+    .cardText{
+        display: none;
     }
 }
 
