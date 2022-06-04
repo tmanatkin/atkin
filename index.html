@@ -1,86 +1,155 @@
+<!-- Tanner Atkin - Modified 4 Jun 2022 -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Tanner Atkin</title>
-        <link rel="icon" href="root/images/favicon.png">
-        <link rel="stylesheet" href="root/style.css">
-        <script src="root/script.js"></script>
-        <!-- Google Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav id="navBar">
-            <ul>
-                <li><a href="#resume">resume</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#top">home</a></li>
-            </ul>
-        </nav>
-        <div class="titleContainer">
-            <h1 id="twoLineH1">tanner atkin</h1>
-            <img class="titleImage" src="root/images/water.jpg">
-        </div>
-        <div class="pageContainer">
-            <div id="aboutMe">
-                <h3 style="text-align: left;">About Me</h3>
-                <p>I am currently a Pre-Business student at Brigham Young University and I plan on applying to the Information Systems program ummer of 2022. I have always had a passion for problem-solving and creating new ways to overcome obstacles. Throughout my education, this love for problem-solving has transferred to my love for coding and learning new programming languages. Developing skills such as critical thinking has been fulfilling in my education thus far and I look forward to continuing to expand my abilities.</p>
-                <p><br><br>For two years I had the opportunity to serve a full-time proselyting mission for The Church of Jesus Christ of Latter-day Saints in the greater St. Louis, MO area. This experience changed my life and taught me the importance of charity and kindness. My service not only helped others overcome struggles in their personal lives, but it also helped me change the way I view and treat other people.</p>
-                <!-- <img class="aboutImage" src="root/images/bagpipes.jpg"> -->
-                <p><br><br>One of my favorite hobbies is playing the bagpipes. Beginning with my grandma immigrating to the United States from Scotland and starting a family of her own in Utah, I am proud of my Scottish heritage. Starting at 11 years old, I learned how to play the bagpipes from my dad. We are both currently members of the Salt Lake Scots Pipe Band, serving others in the community with our musical abilities. I have entered multiple competitions in Utah, both solo and with the band, and I love continuing to grow my talents.</p>                
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tanner Atkin</title>
+    <link rel="icon" href="root/images/favicon.png">
+    <link rel="stylesheet" href="root/style.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navBar">
+        <ul>
+            <li><a href="#resume">resume</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#top">home</a></li>
+        </ul>
+    </nav>
+    <!-- Title Heading -->
+    <div class="titleContainer">
+        <h1 id="twoLineH1">tanner atkin</h1>
+        <img class="titleImage" src="root/images/water.jpg">
+    </div>
+    <!-- About Me -->
+    <div class="pageContainer">
+        <div id="aboutMe">
+            <h2>Welcome!</h2>
+            <p>I am currently a Pre-Business student at Brigham Young University and I plan on applying to the
+                Information Systems program summer of 2022. I have always had a passion for problem-solving and
+                creating new ways to overcome obstacles. Throughout my education, this love for problem-solving has
+                transferred to my love for coding and learning new programming languages. Developing skills like
+                critical thinking has been fulfilling in my education thus far and I look forward to continuing to
+                expand my abilities.
+                <br><br>
+                The purpose of this website is to showcase some of those skills that I have developed and display
+                projects that I have worked on. This website has been created by me from scratch using HTML, CSS, and
+                JavaScript. Please feel free to look at my portfolio and learn more about me!
+            </p>
+            <h2 style="padding: 50px 0px 0px 0px;"> About Me</h2>
+            <!-- Family -->
+            <button class="collapsible">Family<div class="collapsibleBarTitle" id="familyLine"></div></button>
+            <div class="content">
+                <p>I have a family of five with two sisters, a twin sister Claire, and a younger sister Sophie. I have
+                    lived in Heber City, UT for the majority of my life, growing up loving the outdoors. I love to
+                    travel with my family and spend time with them when I'm not busy with school.
+                </p>
+                <div class="aboutImageContainer">
+                    <img src="root/images/family.jpg">
+                </div>
+            </div>
+            <!-- Hobbies -->
+            <button class="collapsible">Hobbies<div class="collapsibleBarTitle" id="hobbyLine"></div></button>
+            <div class="content">
+                <p>One of my favorite hobbies is playing the bagpipes. Beginning with my grandma immigrating to the
+                    United States from Scotland and starting a family of her own in Utah, I am proud of my Scottish
+                    heritage. Starting at 11 years old, I learned how to play the bagpipes from my dad. We are both
+                    currently members of the Salt Lake Scots Pipe Band, serving others in the community with our musical
+                    abilities. I have entered multiple competitions in Utah, both competing solo and with the band. I
+                    love continuing to grow my talents and look forward to further developing this skill.</p>
+                <div class="aboutImageContainer" id="hobbyImageContainer">
+                    <img src="root/images/bagpipes.jpg">
+                    <img src="root/images/skiing.JPEG">
+                </div>
+                <p>During the winter I love to snow ski with my family. For the majority of my life my family has made
+                    trips almost weekly every winter to Park City to go skiing. I love spending time in the mountains,
+                    especially with my family.</p>
+            </div>
+            <!-- Mission -->
+            <button class="collapsible">Service<div class="collapsibleBarTitle" id="missionLine"></div></button>
+            <div class="content">
+                <p>For two years I had the opportunity to serve a full-time proselyting mission for The Church of Jesus
+                    Christ of Latter-day Saints in the greater St. Louis, MO area. This experience changed my life and
+                    taught me the importance of charity and kindness. My service not only helped others overcome
+                    struggles in their personal lives, but it also helped me change the way I view and treat other
+                    people.</p>
+                <div class="aboutImageContainer" id="missionImageContainer">
+                    <img src="root/images/mission2.jpeg">
+                    <img src="root/images/mission1.jpg">
+                </div>
             </div>
         </div>
-        <div class="titleContainer">
-            <h1>portfolio</h1>
-            <img id="portfolio" class="titleImage" src="root/images/space.jpg">
+    </div>
+    <!-- Portfolio Title -->
+    <div class="titleContainer">
+        <h1>portfolio</h1>
+        <img id="portfolio" class="titleImage" src="root/images/space.jpg">
+    </div>
+    <!-- Portfolio Links -->
+    <div class="pageContainer">
+        <h2 style="text-align: center;">View Projects</h2>
+        <div id="projectContainer">
+            <!-- Yahtzee -->
+            <a href="external/yahtzee" target="_blank">
+                <div class="projectCard" style="background-image: url(root/images/YahtzeeCard.jpg);">
+                    <p class="cardText">
+                        Play an interactive dice game created from scratch using JavaScript, HTML, and CSS.<br><br>Try
+                        it yourself and see if you can beat the computer!
+                    </p>
+                </div>
+            </a>
+            <!-- Human Trafficking -->
+            <a href="external/humanTrafficking" target="_blank">
+                <div class="projectCard" style="background-image: url(root/images/HTCard.jpg);">
+                    <p class="cardText">
+                        This page was created to help bring awareness to Human Trafficking in Utah and the United
+                        States.<br><br>Find out how you can help.
+                    </p>
+                </div>
+            </a>
+            <!-- Gameday Analytics -->
+            <a href="external/gamedayAnalytics" target="_blank">
+                <div class="projectCard" style="background-image: url(root/images/GamedayCard.jpg);">
+                    <p class="cardText">
+                        View data and insights gathered from tweets about 2022 superbowl ads.<br><br>See which
+                        commercials performed the best and why!
+                    </p>
+                </div>
+            </a>
+            <!-- View Code -->
+            <a href="external/viewCode" target="_blank">
+                <div class="projectCard" style="background-image: url(root/images/atkinCard.jpg);">
+                    <p class="cardText">
+                        <br><br>Find out what exactly makes this page run.
+                    </p>
+                </div>
+            </a>
         </div>
-        <div class="pageContainer">
-            <h3>View Projects</h3>
-            <div id="projectContainer">
-                <a href="external/yahtzee" target="_blank">
-                    <div class="projectCard" style="background-image: url(root/images/YahtzeeCard.jpg);">
-                        <p class="cardText">
-                            Play an interactive dice game created from scratch using JavaScript, HTML, and CSS.<br><br>Try it yourself and see if you can beat the computer!
-                        </p>
-                    </div>
-                </a>
-                <a href="external/humanTrafficking" target="_blank">
-                    <div class="projectCard" style="background-image: url(root/images/HTCard.jpg);">
-                        <p class="cardText">
-                            This page was created to help bring awareness to Human Trafficking in Utah and the United States.<br><br>Find out how you can help.
-                        </p>
-                    </div>
-                </a>
-                <a href="external/gamedayAnalytics" target="_blank">
-                    <div class="projectCard" style="background-image: url(root/images/GamedayCard.jpg);">
-                        <p class="cardText">
-                            View data and insights gathered from tweets about 2022 superbowl ads.<br><br>See which commercials performed the best and why!
-                        </p>
-                    </div>
-                </a>
-                <a href="external/viewCode" target="_blank">
-                    <div class="projectCard" style="background-image: url(root/images/atkinCard.jpg);">
-                        <p class="cardText">
-                            <br><br>Find out what exactly makes this page run.
-                        </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="titleContainer">
-            <h1>resume</h1>
-            <img id="resume" class="titleImage" src="root/images/leaves.jpg">
-        </div>
-        <div class="pageContainer">
-            <img id="resumeImage" src="root/images/resume.jpg">
-            <img id="resumeImageMobile" src="root/images/resumeMobile.jpg">
-            <a class="button" href="root/Tanner Atkin Resume.pdf" download target="_blank">Download Resume</a>
-        </div>
-        <footer>
-            <p class="footerText">Created by Tanner Atkin</p>
-            <p class="footerText" style="float: right;">Updated 1 Jun 2022</p>
-        </footer>
-    </body>
+    </div>
+    <!-- Resume Title -->
+    <div class="titleContainer">
+        <h1>resume</h1>
+        <img id="resume" class="titleImage" src="root/images/leaves.jpg">
+    </div>
+    <!-- View Resume -->
+    <div class="pageContainer">
+        <img id="resumeImage" src="root/images/resume.jpg">
+        <img id="resumeImageMobile" src="root/images/resumeMobile.jpg">
+        <a class="button" href="root/Tanner Atkin Resume.pdf" download target="_blank">Download Resume</a>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p class="footerText">Created by Tanner Atkin</p>
+        <p class="footerText" style="float: right;">Updated 1 Jun 2022</p>
+    </footer>
+</body>
+<!-- JavaScript -->
+<script src="root/script.js"></script>
+
 </html>
