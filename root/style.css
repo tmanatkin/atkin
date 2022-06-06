@@ -4,6 +4,7 @@
     --offWhite: #fafafa;
     --offBlack: #222222;
     --lightGrey: #aaaaaa;
+    --navyBlue: #213863;
 }
 
 /* NAVBAR */
@@ -72,7 +73,8 @@ body {
     z-index: 50;
     margin: 0px;
     width: 100%;
-    height: 850px;
+    height: 105vh;
+    min-height: 685px;
     object-fit: cover;
     top: -2px;
 }
@@ -88,11 +90,11 @@ h1 {
     position: absolute;
     margin: 0px;
     left: 50%;
-    transform: translate(-50%, 180%);
+    transform: translate(-50%, calc(62.5vh - 175px));
 }
 
 #twoLineH1 {
-    transform: translate(-50%, 70%);
+    transform: translate(-50%, calc(75vh - 350px));
 }
 
 h2 {
@@ -134,19 +136,19 @@ p {
     display: block;
     width: 300px;
     border-radius: 20px;
-    border: var(--offBlack) solid 5px;
+    border: var(--navyBlue) solid 5px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     text-align: center;
     font-size: 25px;
-    background-color: var(--offWhite);
+    background-color: var(--navyBlue);
     transition: 0.3s;
-    color: var(--offBlack);
+    color: var(--offWhite);
 }
 
 .button:hover {
-    background-color: var(--offBlack);
-    color: var(--offWhite);
+    background-color: var(--offWhite);
+    color: var(--navyBlue);
 }
 
 footer {
@@ -249,6 +251,10 @@ footer {
     background-color: #222222ee;
 }
 
+#projectContainer a{
+    text-decoration: none;
+}
+
 /* COLLAPSIBLE */
 .collapsible {
     background-color: var(--offWhite);
@@ -326,6 +332,17 @@ footer {
     transition: max-height 0.2s ease-out;
 }
 
+/* MIN HEIGHT FIX */
+@media only screen and (max-height: 650px) {
+    h1{
+        transform: translate(-50%, 240px);
+    }
+
+    #twoLineH1 {
+        transform: translate(-50%, 160px);
+    }
+}
+
 /* MOBILE */
 @media only screen and (max-width: 1000px) {
     ul {
@@ -355,9 +372,14 @@ footer {
 
     }
 
-    h1 {
+    h1{
         font-size: 150px;
         line-height: 130px;
+        transform: translate(-50%, 275px);
+    }
+
+    #twoLineH1 {
+        transform: translate(-50%, 200px);
     }
 
     h2 {
@@ -369,7 +391,7 @@ footer {
     }
 
     .titleImage {
-        height: 600px;
+        height: 685px;
     }
 
     #aboutMe {
@@ -418,16 +440,21 @@ footer {
 
 /* MOBILE SMALL */
 @media only screen and (max-width: 750px) {
+    
+    ul li a, ul li a:hover  {
+        border: none;
+    }
+    
     h1 {
         font-size: 100px;
         line-height: 90px;
     }
 
-    h2 {
-        font-size: 50px;
+    #twoLineH1 {
+        transform: translate(-50%, 250px);
     }
 
-    .titleImage {
-        height: 400px;
+    h2 {
+        font-size: 50px;
     }
 }
