@@ -251,7 +251,7 @@ footer {
     background-color: #222222ee;
 }
 
-#projectContainer a{
+#projectContainer a {
     text-decoration: none;
 }
 
@@ -334,7 +334,7 @@ footer {
 
 /* MIN HEIGHT FIX */
 @media only screen and (max-height: 650px) {
-    h1{
+    h1 {
         transform: translate(-50%, 240px);
     }
 
@@ -372,7 +372,7 @@ footer {
 
     }
 
-    h1{
+    h1 {
         font-size: 150px;
         line-height: 130px;
         transform: translate(-50%, 275px);
@@ -440,11 +440,12 @@ footer {
 
 /* MOBILE SMALL */
 @media only screen and (max-width: 750px) {
-    
-    ul li a, ul li a:hover  {
+
+    ul li a,
+    ul li a:hover {
         border: none;
     }
-    
+
     h1 {
         font-size: 100px;
         line-height: 90px;
