@@ -344,6 +344,19 @@ footer {
     }
 }
 
+/* LARGE SCREEN */
+@media only screen and (min-width: 2500px) {
+    h1 {
+        font-size: 300px;
+        line-height: 265px;
+        margin-top: calc(50vh - 130px);
+    }
+
+    #twoLineH1 {
+        margin-top: calc(50vh - 265px);
+    }
+}
+
 /* MOBILE */
 @media only screen and (max-width: 1000px) {
     ul {
