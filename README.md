@@ -1,1 +1,3 @@
-# atkin
+# portfolioSite
+
+Portfolio website for Tanner Atkin
