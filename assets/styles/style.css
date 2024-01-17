@@ -1,7 +1,7 @@
 /* Global */
 
 :root {
-  --color-primary: #c06733;
+  --color-primary: #cc603e;
   --color-offwhite: #fafafa;
   --color-offblack: #222;
   --color-darkgrey: #555;
@@ -34,6 +34,10 @@ header {
   align-items: center;
 }
 
+#name-container {
+  margin: 0 50px 0 0;
+}
+
 h1 {
   font-size: 4em;
   font-weight: 700;
@@ -45,15 +49,10 @@ h1 {
   color: var(--color-primary);
 }
 
-#name-underline {
-  height: 0.5em;
-  background-color: var(--color-offblack);
-}
-
 #rotating-title-container {
+  background-color: var(--color-offwhite);
   position: relative;
   height: 6em;
-  padding: 0 1em 0 0;
   margin: 0;
   display: inline-block;
   overflow: hidden;
@@ -71,12 +70,12 @@ h1 {
 
 #rotating-title-container::before {
   top: 0;
-  background: linear-gradient(to top, transparent, white);
+  background: linear-gradient(to top, transparent, var(--color-offwhite));
 }
 
 #rotating-title-container::after {
   bottom: 0;
-  background: linear-gradient(to bottom, transparent, white);
+  background: linear-gradient(to bottom, transparent, var(--color-offwhite));
 }
 
 #rotating-title-container h1 {
@@ -91,43 +90,6 @@ header img {
   margin: 0;
   padding: 0;
 }
-
-/* SVG Title Animation */
-
-/* #name-title {
-  width: 50%;
-  max-width: 550px;
-}
-
-#name-title .layer1 {
-  stroke: var(--color-lightgrey);
-}
-
-#name-title .layer2 {
-  stroke: var(--color-darkgrey);
-}
-
-#name-title > path {
-  clip-path: url(#name-svgclip);
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-}
-
-#name-title .reverse {
-  stroke-dashoffset: -1;
-}
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes undraw {
-  to {
-    stroke-dashoffset: 1;
-  }
-} */
 
 /* Footer */
 
@@ -168,4 +130,31 @@ footer a:hover {
 footer svg {
   display: inline;
   fill: var(--color-darkgrey);
+}
+
+@media only screen and (max-width: 1300px) {
+  header {
+    flex-direction: column;
+  }
+
+  #name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 50px 0;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  #rotating-title-container {
+    height: 4em;
+  }
+
+  header img {
+    height: 70%;
+    /* width: 150vw; */
+  }
 }
