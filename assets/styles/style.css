@@ -14,7 +14,6 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--color-offwhite);
-  overflow-x: hidden;
 }
 
 body,
@@ -180,11 +179,12 @@ footer svg {
   margin: 0 0 0 5px;
 }
 
-/* Smaller Display */
+/* Smaller Desktop Display */
 
 @media only screen and (max-width: 1500px) {
   header {
     width: 1000px;
+    min-height: 650px;
   }
 
   main {
@@ -207,6 +207,7 @@ footer svg {
   header {
     flex-direction: column;
     width: 600px;
+    min-height: 800px;
   }
 
   main {
@@ -275,10 +276,6 @@ footer svg {
     max-width: 70vw;
   }
 
-  header img {
-    overflow: hidden;
-  }
-
   h2 {
     width: 80%;
   }
@@ -289,5 +286,35 @@ footer svg {
 
   footer svg {
     display: none;
+  }
+}
+
+/* Small Mobile */
+
+@media only screen and (max-width: 400px) {
+  body {
+    min-width: 320px;
+  }
+
+  header {
+    min-height: 650px;
+    min-width: 320px;
+  }
+
+  main {
+    min-width: 320px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .card {
+    width: 250px;
+    height: 250px;
+  }
+
+  h2 {
+    font-size: 1.5em;
   }
 }
