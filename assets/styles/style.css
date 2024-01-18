@@ -180,44 +180,19 @@ footer svg {
   margin: 0 0 0 5px;
 }
 
-/* Header Resizing */
+/* Smaller Display */
 
 @media only screen and (max-width: 1500px) {
   header {
-    min-height: 650px;
-    width: 825px;
+    width: 1000px;
+  }
+
+  main {
+    width: 1000px;
   }
 
   h1 {
     font-size: 3em;
-  }
-
-  header img {
-    width: 40%;
-  }
-
-  main {
-    width: 825px;
-  }
-
-  .card {
-    width: 350px;
-    height: 350px;
-  }
-}
-
-@media only screen and (max-width: 1250px) {
-  header {
-    min-height: 575px;
-    width: 750px;
-  }
-
-  header img {
-    width: 35%;
-  }
-
-  main {
-    width: 750px;
   }
 
   .card {
@@ -226,7 +201,7 @@ footer svg {
   }
 }
 
-/* Mobile */
+/* Large Mobile (Tablet) */
 
 @media only screen and (max-width: 1100px) {
   header {
@@ -262,11 +237,9 @@ footer svg {
   header img {
     width: 75%;
   }
-}
 
-@media only screen and (max-width: 800px) {
   h2 {
-    width: 80vw;
+    font-size: 2em;
   }
 
   footer {
@@ -285,13 +258,15 @@ footer svg {
   }
 }
 
+/* Mobile */
+
 @media only screen and (max-width: 600px) {
   header {
-    width: 80vw;
+    width: 100vw;
   }
 
   main {
-    width: 80vw;
+    width: 100vw;
   }
 
   .card {
@@ -302,6 +277,10 @@ footer svg {
 
   header img {
     overflow: hidden;
+  }
+
+  h2 {
+    width: 80%;
   }
 
   footer a {
