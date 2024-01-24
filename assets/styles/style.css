@@ -95,11 +95,11 @@ header img {
   padding: 0;
 }
 
-/* Main */
+/* Section */
 
-main {
+section {
   width: 1300px;
-  margin: 25px 0;
+  margin: 25px 0 150px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,27 +112,64 @@ h2 {
   margin: 0;
 }
 
-#cardContainer {
+/* Skills */
+
+#skillContainer {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin: 50px 0;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 50px 0;
+}
+
+#skillContainer h3 {
+  font-size: 4em;
+  margin: 20px 40px;
+  color: var(--color-primary);
+}
+
+/* Projects */
+
+#cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0;
 }
 
 .card {
-  width: 400px;
-  height: 400px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  /* align-items: center; */
+  width: 100%;
+  padding: 30px;
   margin: 15px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-  transition: 0.3s;
+  transition: height 0.5s ease;
+  /* overflow: hidden; */
 }
 
-.card:hover {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
-  transform: scale(1.05);
+/* .card.active {
+  height: 500px;
+} */
+
+.card h3 {
+  font-size: 2em;
+  margin: 0;
+  color: var(--color-offblack);
+}
+
+.card p {
+  margin: 1em 0 0 0;
+}
+
+.card img {
+  width: 50%;
 }
 
 /* Footer */
@@ -187,7 +224,7 @@ footer svg {
     min-height: 650px;
   }
 
-  main {
+  section {
     width: 1000px;
   }
 
@@ -195,9 +232,9 @@ footer svg {
     font-size: 3em;
   }
 
-  .card {
-    width: 300px;
-    height: 300px;
+  #skillContainer h3 {
+    font-size: 3em;
+    margin: 15px 30px;
   }
 }
 
@@ -207,16 +244,12 @@ footer svg {
   header {
     flex-direction: column;
     width: 600px;
-    min-height: 800px;
+    min-height: 700px;
   }
 
-  main {
+  section {
     width: 600px;
-  }
-
-  .card {
-    width: 250px;
-    height: 250px;
+    max-width: 80vw;
   }
 
   #name-container {
@@ -237,6 +270,11 @@ footer svg {
 
   header img {
     width: 75%;
+  }
+
+  #skillContainer h3 {
+    font-size: 2.5em;
+    margin: 15px 25px;
   }
 
   h2 {
@@ -266,16 +304,6 @@ footer svg {
     width: 100vw;
   }
 
-  main {
-    width: 100vw;
-  }
-
-  .card {
-    width: 300px;
-    height: 300px;
-    max-width: 70vw;
-  }
-
   h2 {
     width: 80%;
   }
@@ -297,24 +325,32 @@ footer svg {
   }
 
   header {
-    min-height: 650px;
+    min-height: 550px;
     min-width: 320px;
   }
 
-  main {
-    min-width: 320px;
+  section {
+    width: 310px;
+  }
+
+  #cardContainer {
+    margin: 0;
   }
 
   h1 {
     font-size: 2em;
   }
 
-  .card {
-    width: 250px;
-    height: 250px;
+  #skillContainer h3 {
+    font-size: 2em;
+    margin: 10px 20px;
   }
 
   h2 {
+    font-size: 1.5em;
+  }
+
+  .card h3 {
     font-size: 1.5em;
   }
 }
