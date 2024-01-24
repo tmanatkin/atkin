@@ -95,7 +95,7 @@ header img {
   padding: 0;
 }
 
-/* Section */
+/* Sections */
 
 section {
   width: 1300px;
@@ -112,6 +112,23 @@ h2 {
   margin: 0;
 }
 
+section a {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: 50px 0;
+  text-decoration: none;
+  color: var(--color-offwhite);
+  background-color: var(--color-primary);
+  padding: 20px 50px;
+  border-radius: 5px;
+  border: 2px solid var(--color-primary);
+  transition: background-color 0.3s ease;
+}
+
+section a:hover {
+  background-color: var(--color-offwhite);
+  color: var(--color-primary);
+}
 /* Skills */
 
 #skillContainer {
@@ -150,7 +167,7 @@ h2 {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-  transition: height 0.5s ease;
+  /* transition: height 0.5s ease; */
   /* overflow: hidden; */
 }
 
@@ -245,6 +262,7 @@ footer svg {
     flex-direction: column;
     width: 600px;
     min-height: 700px;
+    height: 90vh;
   }
 
   section {
