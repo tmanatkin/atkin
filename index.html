@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Created by Tanner Atkin -->
 
 <head>
   <!-- Metadata -->
@@ -15,7 +16,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/styles/normalize.css">
   <link rel="stylesheet" href="/assets/styles/style.css">
-  <!-- JS -->
+  <!-- JavaScript -->
   <script src="/assets/scripts/rotateTitle.js" defer></script>
   <script src="/assets/scripts/expandCards.js" defer></script>
   <!-- Google Fonts -->
@@ -44,10 +45,9 @@
     <img src="/assets/images/tanner-atkin.png" alt="Picture of Tanner Smiling">
   </header>
 
-  <!-- Skills -->
+  <!-- Skills Section -->
   <section>
     <h2>Here's some skills that I've learned</h2>
-
     <div id="skillContainer">
       <h3>JavaScript</h3>
       <h3>Node.js</h3>
@@ -63,7 +63,7 @@
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects Section -->
   <!-- <section>
     <h2>Check out some of my latest projects.</h2>
     <div id="cardContainer">
@@ -76,7 +76,7 @@
     </div>
   </section> -->
 
-  <!-- Resume -->
+  <!-- Resume Section -->
   <section id="bottom-section">
     <h2>Take a look at my resume.</h2>
     <a href="/assets/Tanner Atkin Resume.pdf" target="_blank">Download</a>
@@ -96,7 +96,7 @@
     <p>Updated <span id="lastUpdated"></span></p>
   </footer>
 
-  <!-- Sets Last Updated Date (Last Commit) Using GitHub API -->
+  <!-- Sets Last Updated Date (Using the Last Commit) with GitHub API -->
   <script>
     // fetch last commit information
     fetch('https://api.github.com/repos/tmanatkin/atkin/commits?per_page=1')
