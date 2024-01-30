@@ -1,4 +1,4 @@
-/* Global */
+/* CSS */
 
 :root {
   --color-primary: #cc603e;
@@ -27,6 +27,8 @@ p,
 footer > * {
   font-family: "Poppins", sans-serif;
 }
+
+/* Header */
 
 header {
   height: 100vh;
@@ -115,8 +117,9 @@ h2 {
 section a {
   font-size: 1.25em;
   font-weight: 500;
-  margin: 50px 0;
+  margin: 25px 0 50px 0;
   text-decoration: none;
+  text-align: center;
   color: var(--color-offwhite);
   background-color: var(--color-primary);
   padding: 20px 50px;
@@ -129,6 +132,10 @@ section a:hover {
   background-color: var(--color-offwhite);
   color: var(--color-primary);
 }
+
+#bottom-section {
+  margin: 0;
+}
 /* Skills */
 
 #skillContainer {
@@ -137,7 +144,7 @@ section a:hover {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
 }
 
 #skillContainer h3 {
@@ -157,9 +164,9 @@ section a:hover {
 }
 
 .card {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
   /* align-items: center; */
   width: 100%;
   padding: 30px;
