@@ -14,7 +14,6 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--color-offwhite);
-  gap: 25px;
 }
 
 body,
@@ -28,6 +27,13 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+#section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  padding: 0 0 25px 0;
+}
 /* Header */
 
 header {
@@ -140,7 +146,6 @@ section a:hover {
 
 .skill-section {
   gap: 50px;
-  margin: 0 0 75px 0;
 }
 
 .skill-section div {
@@ -149,56 +154,16 @@ section a:hover {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  gap: 40px 90px;
+  gap: 40px 60px;
 }
 
 .skill-section div h3 {
-  font-size: 4em;
+  font-size: 3.25em;
+  color: var(--color-offwhite);
+  background-color: var(--color-primary);
   margin: 0;
-  color: var(--color-primary);
-}
-
-/* Projects */
-
-#cardContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  /* width: 100%; */
-}
-
-.card {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  width: 100%;
-  padding: 30px;
-  margin: 15px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-  /* transition: height 0.5s ease; */
-  /* overflow: hidden; */
-}
-
-/* .card.active {
-  height: 500px;
-} */
-
-.card h3 {
-  font-size: 2em;
-  margin: 0;
-  color: var(--color-offblack);
-}
-
-.card p {
-  margin: 1em 0 0 0;
-}
-
-.card img {
-  width: 50%;
+  padding: 0.25em 0.5em;
+  border-radius: 0.75em;
 }
 
 /* Resume */
@@ -263,13 +228,16 @@ footer svg {
     width: 1000px;
   }
 
+  .skill-section div {
+    gap: 40px 50px;
+  }
+
   h1 {
     font-size: 3em;
   }
 
   .skill-section div h3 {
-    font-size: 3em;
-    margin: 15px 30px;
+    font-size: 2.5em;
   }
 }
 
@@ -286,6 +254,10 @@ footer svg {
   section {
     width: 600px;
     max-width: 80vw;
+  }
+
+  .skill-section div {
+    gap: 30px;
   }
 
   #name-container {
@@ -309,8 +281,7 @@ footer svg {
   }
 
   .skill-section div h3 {
-    font-size: 2.5em;
-    margin: 15px 25px;
+    font-size: 2em;
   }
 
   h2 {
@@ -377,9 +348,12 @@ footer svg {
     font-size: 2em;
   }
 
+  .skill-section div {
+    gap: 20px;
+  }
+
   .skill-section div h3 {
     font-size: 2em;
-    margin: 10px 20px;
   }
 
   h2 {
