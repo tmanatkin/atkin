@@ -136,6 +136,7 @@ section a:hover {
 #bottom-section {
   margin: 0;
 }
+
 /* Skills */
 
 #skillContainer {
@@ -157,10 +158,10 @@ section a:hover {
 
 #cardContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  width: 100%;
-  margin: 50px 0;
+  justify-content: center;
+  /* width: 100%; */
 }
 
 .card {
