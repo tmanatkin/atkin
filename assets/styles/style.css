@@ -14,6 +14,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: var(--color-offwhite);
+  gap: 25px;
 }
 
 body,
@@ -23,8 +24,7 @@ h3,
 h4,
 h5,
 h6,
-p,
-footer > * {
+p {
   font-family: "Poppins", sans-serif;
 }
 
@@ -101,13 +101,17 @@ header img {
 
 section {
   width: 1300px;
-  margin: 25px 0 150px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h2 {
+.section-primary-bg {
+  background-color: var(--color-primary);
+  border-radius: 20px;
+}
+
+section h2 {
   text-align: center;
   color: var(--color-offblack);
   font-size: 2.5em;
@@ -117,7 +121,6 @@ h2 {
 section a {
   font-size: 1.25em;
   font-weight: 500;
-  margin: 25px 0 50px 0;
   text-decoration: none;
   text-align: center;
   color: var(--color-offwhite);
@@ -133,24 +136,25 @@ section a:hover {
   color: var(--color-primary);
 }
 
-#bottom-section {
-  margin: 0;
-}
-
 /* Skills */
 
-#skillContainer {
+.skill-section {
+  gap: 50px;
+  margin: 0 0 75px 0;
+}
+
+.skill-section div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: 50px 0 0 0;
+  gap: 40px 90px;
 }
 
-#skillContainer h3 {
+.skill-section div h3 {
   font-size: 4em;
-  margin: 20px 40px;
+  margin: 0;
   color: var(--color-primary);
 }
 
@@ -195,6 +199,12 @@ section a:hover {
 
 .card img {
   width: 50%;
+}
+
+/* Resume */
+
+.resume-section {
+  gap: 15px;
 }
 
 /* Footer */
@@ -257,7 +267,7 @@ footer svg {
     font-size: 3em;
   }
 
-  #skillContainer h3 {
+  .skill-section div h3 {
     font-size: 3em;
     margin: 15px 30px;
   }
@@ -298,7 +308,7 @@ footer svg {
     width: 75%;
   }
 
-  #skillContainer h3 {
+  .skill-section div h3 {
     font-size: 2.5em;
     margin: 15px 25px;
   }
@@ -367,7 +377,7 @@ footer svg {
     font-size: 2em;
   }
 
-  #skillContainer h3 {
+  .skill-section div h3 {
     font-size: 2em;
     margin: 10px 20px;
   }
